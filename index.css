@@ -1,0 +1,255 @@
+body
+{
+    background-image: url('img/bg.png');
+}
+a{
+    color: #31262B;  
+}
+a :hover{
+    background-color: #DCDF24;
+    color: yellow;
+}
+#all
+{
+    padding: 0;
+    margin: 0;
+    height: auto;
+}
+#nav
+{
+   height: 150px;
+   background-color: #6D3E08;
+   margin-left: auto;
+   margin-right: auto;
+   padding-top: 90px;
+   text-align: center;
+   font-size: 20px;
+}
+#logo{
+    height: 120px;
+    width: 105px;
+    background-image: url('img/logo_v2.png');
+    background-size: cover;
+    position: fixed;
+    z-index: 10;
+    top:10px;
+}
+#creatorbtn {
+    height: 50px;
+    width: 150px;
+    background-color: #F1BC0E;
+    padding: 10px;
+    float: right;
+    margin-right: 10px;
+
+}
+#historybtn {
+    height: 50px;
+    width: 200px;
+    background-color: #F1BC0E;
+    margin-right: 10px;
+    padding: 10px;
+    float: right;
+}
+#videobtn {
+    height: 50px;
+    width: 150px;
+    background-color: #F1BC0E;
+    margin-right: 10px;
+    padding: 10px;
+    float: right;
+}
+#contactbtn {
+    height: 50px;
+    width: 150px;
+    background-color: #F1BC0E;
+    padding: 10px;
+    float: right;
+    
+}
+#slider
+{
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+#sliderpicA
+{
+    height: 400px;
+background-image: url('img/bean01.jpg');
+background-size: cover;
+}
+#sliderpicB
+{
+    height: 400px;
+background-image: url('img/bean02.jpg');
+background-size: cover;
+}
+#sliderpicC
+{
+    height: 400px;
+background-image: url('img/bean03.jpg');
+background-size: cover;
+}
+#sliderpicD
+{
+    height: 400px;
+background-image: url('img/bean04.jpg');
+background-size: cover;
+}
+#sliderpicE
+{
+    height: 400px;
+background-image: url('img/bean05.jpg');
+background-size: cover;
+}
+#sliderpicF
+{
+    height: 400px;
+background-image: url('img/bean06.jpg');
+background-size: cover;
+}
+.carousel-indicators li {
+    height: 25px;
+    width: 25px;
+    border-radius: 15px;
+}
+.carousel-control-next-icon,.carousel-control-prev-icon
+{
+    width: 50px; 
+    height: 50px;
+}
+
+#content
+{   
+   height: auto;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 0;
+}
+#creator
+{
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    padding: 0;
+}
+#creatorpicA {
+    float: left;
+    height: 400px;
+    background-color: #fff;
+    background-image: url('img/bean01.jpg');
+    background-size: cover;
+}
+#creatorpicB {
+    float: left;
+    height: 400px;
+    background-color: #fff;
+    background-image: url('img/bean01.jpg');
+    background-size: cover;
+}
+#creatortextA{
+    float: left;
+    font-size:  23px;
+}
+#creatortextB{
+    float: left;
+    font-size:  23px;
+}
+#creatortitle
+{
+    height: 200px;
+    text-align: center;
+    padding-top: 75px;
+}
+
+
+#history
+{
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+#historytitle
+{
+ text-align: center;
+ padding-top: 80px;
+ margin-bottom: 100px;
+
+}
+#historycontentA{
+    margin-bottom: 50px;
+}
+#historypicA
+{   
+ height: 500px;
+ background-image: url('img/historypicA.jpg');
+ background-size: contain;
+ background-repeat: no-repeat;
+}
+#historycontentB{
+    margin-bottom: 50px;
+}
+#historypicB
+{
+    margin-left: 100px;
+ height: 500px;
+ background-image: url('img/historypicB.jpg');
+ background-size: contain;
+ background-repeat: no-repeat;
+}
+#historycontentC{
+    margin-bottom: 50px;
+}
+#historypicC
+{   
+ height: 500px;
+ background-image: url('img/historypicC.jpg');
+ background-size: contain;
+ background-repeat: no-repeat;
+}
+#historycontentD{
+    margin-bottom: 50px;
+}
+#historypicD
+{
+    margin-left: 100px;
+ height: 500px;
+ background-image: url('img/historypicD.jpg');
+ background-size: contain;
+ background-repeat: no-repeat;
+}
+
+
+#video
+{
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+#contact{
+    text-align: center;
+    height: 350px;    
+    padding-top: 20px;
+    
+}
+#contactText {
+    height: 250px;
+    text-align: center;
+    float: left;
+    padding-top: 20px;
+}
+
+#contactMap{
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    padding-top: 20px;
+
+}
