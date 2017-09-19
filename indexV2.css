@@ -12,7 +12,7 @@ body {
     background-color: #382019;
     position: relative;
     padding-top: 90px;
-    padding-left: 600px;
+    padding-right: 70px;
 }
 
 #logo {
@@ -32,7 +32,7 @@ body {
     border-right: none;
     border-top: none;
     border-bottom: none;
-    float: left;
+    float: right;
     padding-left: 10px;
     margin-right: 45px;
 }
@@ -45,7 +45,7 @@ body {
     border-right: none;
     border-top: none;
     border-bottom: none;
-    float: left;
+    float: right;
     padding-left: 10px;
     margin-right: 80px;
 }
@@ -57,7 +57,7 @@ body {
     border-right: none;
     border-top: none;
     border-bottom: none;
-    float: left;
+    float: right;
     padding-left: 10px;
     margin-right: 50px;
 }
@@ -70,7 +70,7 @@ body {
     border-right: none;
     border-top: none;
     border-bottom: none;
-    float: left;
+    float: right;
     padding-left: 10px;
 }
 
@@ -86,6 +86,7 @@ body {
 #creatorbtnA,#historybtnA,#videobtnA,#messagebtnA {
     font-size: 15px;
     color:#382019;
+    font-weight: bold;
 }
 
 #creatorbtnB,#historybtnB,#videobtnB,#messagebtnB {
@@ -93,7 +94,25 @@ body {
     color: #382019;
 }
 
-#locatBox 
+#locatBox #creatorbtn {
+    border-color: #382019;
+    float: left;
+
+}
+#locatBox #historybtn {
+    border-color: #382019;
+    float: left;
+}
+
+#locatBox #videobtn {
+    border-color: #382019;
+    float: left;
+}
+
+#locatBox #messagebtn {
+    border-color: #382019;
+    float: left;
+}
 
 
 #slider
@@ -152,10 +171,79 @@ background-size: cover;
 }
 
 #locatBox {
-    height: 140;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    margin-bottom: 40px;
+
+}
+
+#creator {
+    height: 1000px;
+}
+#creatorTitle {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 36px;
+    font-weight: bold;
+
+}
+
+#creatorCont{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
+#history{
+    height: 500px;
+}
+
+#historyTitle {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#historyCont{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#video{
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+}
+
+#videoTitle {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#videoCont{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#message{
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#messageTitle {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 36px;
+}
+
+#messageCont{
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 
