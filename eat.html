@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        #navbar {
+            display: none;
+        }
+
+        .menu-toggle {
+            width: 40px;
+            height: 30px;
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            cursor: pointer;
+        }
+
+        .menu-toggle.on .one {
+            -moz-transform: rotate(45deg) translate(7px, 7px);
+            -ms-transform: rotate(45deg) translate(7px, 7px);
+            -webkit-transform: rotate(45deg) translate(7px, 7px);
+            transform: rotate(45deg) translate(7px, 7px);
+        }
+
+        .menu-toggle.on .two {
+            opacity: 0;
+        }
+
+        .menu-toggle.on .three {
+            -moz-transform: rotate(-45deg) translate(8px, -10px);
+            -ms-transform: rotate(-45deg) translate(8px, -10px);
+            -webkit-transform: rotate(-45deg) translate(8px, -10px);
+            transform: rotate(-45deg) translate(8px, -10px);
+        }
+
+        .one,
+        .two,
+        .three {
+            width: 100%;
+            height: 5px;
+            background: white;
+            margin: 6px auto;
+            backface-visibility: hidden;
+            -moz-transition-duration: 0.3s;
+            -o-transition-duration: 0.3s;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            font-family: Open Sans;
+            list-style: none;
+            margin: 4em auto;
+            text-align: center;
+        }
+
+        nav ul.hidden {
+            display: none;
+        }
+
+        nav ul a {
+            -moz-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+            text-decoration: none;
+            color: white;
+            font-size: 3em;
+            line-height: 1.5;
+            width: 100%;
+            display: block;
+        }
+
+        nav ul a:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .menu-section.on {
+            z-index: 10;
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div id="phonemenu" class="menu-section">
+        <div class="menu-toggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
+        <nav>
+            <ul role="navigation" class="hidden">
+                <li><a href="#locatBoxcre">創始人</a></li>
+                <li><a href="#locatBoxhis">品牌故事</a></li>
+                <li><a href="#locatBoxvid">日式烘焙</a></li>
+                <li><a href="#locatBoxmes">聯絡我們</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+    <script>
+        $(".menu-toggle").on('click', function () {
+            $(this).toggleClass("on");
+            $('.menu-section').toggleClass("on");
+            $("nav ul").toggleClass('hidden');
+        });
+    </script>
+</body>
+
+</html>
