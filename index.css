@@ -131,6 +131,10 @@ a:hover
     float: left;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 #slider
 {
   height: 520px;
@@ -250,9 +254,12 @@ background-size: cover;
 }
 #historyCont,#videoCont {
     margin-bottom: 20px;
+<<<<<<< HEAD
     padding: 0px;
     margin-right: 0px;
     margin-left: 0px;
+=======
+>>>>>>> origin/master
 }
 
 #historyTitleA,#historyTitleB,#videoTitleA,#videoTitleB,#Eventtitle{
@@ -272,8 +279,11 @@ background-size: cover;
     font-size: 20px;
     letter-spacing:5px;
     padding-top: 100px;
+<<<<<<< HEAD
     padding-right: 0px;
     padding-left: 0px;
+=======
+>>>>>>> origin/master
 }
 #historyContPicA {
     height: 400px;
@@ -293,7 +303,10 @@ background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     float: left;
+<<<<<<< HEAD
     padding: 0;
+=======
+>>>>>>> origin/master
 }
 
 
@@ -311,6 +324,7 @@ background-size: cover;
     height: auto;
 }
 
+<<<<<<< HEAD
 .video-wrapper{
     position: relative;
     padding-bottom: 56.25%;
@@ -324,13 +338,18 @@ background-size: cover;
     height: 100%;
 }
 
+=======
+>>>>>>> origin/master
 #videoContTextB {
     margin-left: auto;
     margin-right: auto;
     line-height: 30px;
     font-size: 20px;
     letter-spacing:5px;
+<<<<<<< HEAD
     padding: 0;
+=======
+>>>>>>> origin/master
 }
 #videoContPicB {
     height: 400px;
@@ -340,7 +359,10 @@ background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     float: left;
+<<<<<<< HEAD
     padding: 0;
+=======
+>>>>>>> origin/master
 }
 
 #CrossC {
@@ -397,6 +419,7 @@ background-size: cover;
     clear:both;
 }
 
+<<<<<<< HEAD
 
 @media screen and (max-width:575px){
     
@@ -406,13 +429,19 @@ background-size: cover;
     
 }
 
+=======
+>>>>>>> origin/master
 /*-----------------------漢堡條--------------------------------*/
 
 #sidebar{
     display: block;
 }
 
+<<<<<<< HEAD
 html,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,caption {
+=======
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,caption {
+>>>>>>> origin/master
   margin: 0;
   padding: 0;
   border: 0;
