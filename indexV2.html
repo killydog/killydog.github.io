@@ -6,30 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="indexV2.css">
     <title>上益咖啡</title>
 </head>
 
 <body>
+        <div id="sidebar" class="d-none">
+                <div id="slide-out">
+                    <a href="#nav">首頁</a>
+                    <a href="#locatBoxcre">創始人</a>
+                    <a href="#locatBoxhis">品牌故事</a>
+                    <a href="#locatBoxvid">日式烘焙</a>
+                    <a href="#locatBoxmes">聯絡我們</a>
+                </div>
+        
+                <!-- Slide down button -->
+                <div id="slide-down-circle">
+                    <div id="slide-down-arrow">
+                    </div>
+                </div>
+        
+                <!-- Button to pull out nav -->
+                <div id="click-toggle-circle">
+                    <div id="click-toggle-arrow">
+                    </div>
+                </div>
+            </div>
     <div id="all">
         <div id="nav" class="col-12">
             <div id="logo"></div>
-            <div id="messagebtn">
+            <div id="messagebtn"><a href="#locatBoxmes">
                 <div id="messagebtnTextA" class="TextA">聯絡我們</div>
                 <div id="messagebtnTextB" class="TextB">邀請您來品嘗喝咖啡</div>
+            </a>
             </div>
-            <div id="videobtn">
+            <div id="videobtn"><a href="#locatBoxvid">
                 <div id="videobtnTextA">日式烘焙</div>
                 <div id="videobtnTextB">萃取出獨特的好味道</div>
+            </a>
             </div>
-            <div id="historybtn">
+            <div id="historybtn"><a href="#locatBoxhis">
                 <div id="historybtnTextA">品牌故事</div>
                 <div id="historybtnTextB">這是爸爸的咖啡</div>
+            </a>
             </div>
-            <div id="creatorbtn">
+            <div id="creatorbtn"><a href="#locatBoxcre">
                 <div id="creatorbtnTextA">創始人</div>
                 <div id="creatorbtnTextB">找尋記憶中的好咖啡</div>
+            </a>
             </div>
         </div>
         <div id="slider" class="col-12">
@@ -72,7 +98,7 @@
                     </a>
             </div>
         </div>
-        <div id="locatBox" class="col-10">
+        <div id="locatBoxcre" class="col-10">
             <div id="creatorbtn">
                 <div id="creatorbtnA">創始人</div>
                 <div id="creatorbtnB">找尋記憶中的好咖啡</div>
@@ -89,7 +115,7 @@
             </div>
         </div>
         <div id="CrossA" class="col-12"></div>
-        <div id="locatBox" class="col-10">
+        <div id="locatBoxhis" class="col-10">
             <div id="historybtn">
                 <div id="historybtnA">品牌故事</div>
                 <div id="historybtnB">這是爸爸的咖啡</div>
@@ -114,11 +140,24 @@
             </div>
         </div>
         <div id="Event">
+            歷史沿革
             <div id="Eventslider">
+                    <div class="w3-content w3-display-container" style="max-width:400px">
+                            <img class="mySlides w3-animate-fading" src="img/bean01.jpg" style="width:100%">
+                            <img class="mySlides w3-animate-fading" src="img/bean02.jpg" style="width:100%">
+                            <img class="mySlides w3-animate-fading" src="img/bean03.jpg" style="width:100%">
+                            <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                              <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                              <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                            </div>
+                         </div>
             </div>
         </div>
         <div id="CrossB" class="col-12"></div>
-        <div id="locatBox" class="col-10">
+        <div id="locatBoxvid" class="col-10">
             <div id="videobtn">
                 <div id="videobtnA">日式烘焙</div>
                 <div id="videobtnB">萃取出獨特的好味道</div>
@@ -141,7 +180,7 @@
             </div>
         </div>
         <div id="CrossC" class="col-12"></div>
-        <div id="locatBox" class="col-10">
+        <div id="locatBoxmes" class="col-10">
             <div id="messagebtn">
                 <div id="messagebtnA">聯絡我們</div>
                 <div id="messagebtnB">邀請您來品嘗喝咖啡</div>
@@ -173,6 +212,125 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
         crossorigin="anonymous"></script>
+        <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script>
+        $("document").ready(function () {
+
+            //Slide out nav bar
+            $("#click-toggle-circle").click(function () {
+                //Slide menu out on click
+                $("#slide-out").toggle("slide", 2000);
+
+                //Close arrow on click
+                $("#click-toggle-circle").fadeOut(50);
+                $("#click-toggle-arrow").fadeOut(50);
+
+                //Show other arrow on click
+                setTimeout(function () {
+                    $("#slide-down-arrow").fadeIn(50);
+                    $("#slide-down-circle").fadeIn(50);
+                }, 50);
+
+                /* Delay fade in nav items */
+                setTimeout(function () {
+                    $("#slide-out a").fadeIn(50);
+                }, 50);
+
+                return false;
+            });
+
+
+            //Slide out nav bar
+            $("#slide-out").click(function () {
+                $("#slide-down").toggle("slide", { direction: "up" }, 200);
+                return false;
+            });
+
+
+            //Slide nav bar back in
+            $("#slide-down-circle").click(function () {
+                //Hide button on click
+                $("#slide-down-circle").fadeOut(300);
+                $("#slide-down-arrow").fadeOut(300);
+
+                /* Fade out nav items */
+                $("#slide-out a").fadeOut(0);
+
+
+                //Slide nav menu back in
+                $("#slide-out").toggle("slide", { direction: "left" });
+
+                //Reveal nav button again
+                $("#click-toggle-arrow").fadeIn(300);
+                $("#click-toggle-circle").fadeIn(300);
+                return false;
+
+            });
+        });
+    </script>
+
+    <script>
+        $(window).scroll(function () {
+            var windows_height = $(window).height();
+            var windows_scroll = $(window).scrollTop();
+
+            if (windows_scroll > windows_height/2) { //如果捲軸高度 > 目前螢幕高度
+                $("#sidebar").removeClass('d-none');
+
+
+            } else { //如果捲軸高度 < 目前螢幕高度
+                $("#sidebar").addClass('d-none');
+            }
+        });
+    </script>
+    
+    <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function currentDiv(n) {
+              showDivs(slideIndex = n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              if (n > x.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                 dots[i].className = dots[i].className.replace(" w3-white", "");
+              }
+              x[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " w3-white";
+            }
+            </script>
+            
+            <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                   x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 5000);    
+            }
+            </script>
+
 </body>
 
 </html>
