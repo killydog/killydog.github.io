@@ -131,10 +131,6 @@ a:hover
     float: left;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
 #slider
 {
   height: 520px;
@@ -388,10 +384,17 @@ background-size: cover;
 }
 #Eventslider
 {
-    width: auto;
+    width: 100%;
     height: 400px;
     
 }
+.w3-left {
+    color: black;
+}
+.w3-right {
+    color: black;
+}
+
 #footer {
     height: 100px;
     background-color: #382019;
