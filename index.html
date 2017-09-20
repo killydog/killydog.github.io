@@ -6,32 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <title>上益咖啡</title>
 </head>
 
 <body>
-    <div id="all" class="container-fluid">
-        <div id="nav" class="col-10">
-            <a href="#all">
-                <div id="logo"></div>
-            </a>
-            <a href="#contact">
-                <div id="contactbtn">聯絡我們</div>
-            </a>
-            <a href="#video">
-                <div id="videobtn">日式烘焙</div>
-            </a>
-            <a href="#historytitle">
-                <div id="historybtn">45年的堅持<sup>品牌故事</sup></div>
-            </a>
-            <a href="#creatortitle">
-                <div id="creatorbtn">創始人</div>
-            </a>
-
+    
+    <div id="all">
+            <div id="sidebar" class="d-none">
+                    <div id="slide-out">
+                        <a href="#nav">首頁</a>
+                        <a href="#locatBoxcre">創始人</a>
+                        <a href="#locatBoxhis">品牌故事</a>
+                        <a href="#locatBoxvid">日式烘焙</a>
+                        <a href="#locatBoxmes">聯絡我們</a>
+                    </div>
+            
+                    <!-- Slide down button -->
+                    <div id="slide-down-circle">
+                        <div id="slide-down-arrow">
+                        </div>
+                    </div>
+            
+                    <!-- Button to pull out nav -->
+                    <div id="click-toggle-circle">
+                        <div id="click-toggle-arrow">
+                        </div>
+                    </div>
+                </div>
+        <div id="nav" class="col-12">
+            <div id="logo"></div>
+            <div id="messagebtn">
+                <a href="#locatBoxmes">
+                    <div id="messagebtnTextA" class="TextA">聯絡我們</div>
+                    <div id="messagebtnTextB" class="TextB">邀請您來品嘗喝咖啡</div>
+                </a>
+            </div>
+            <div id="videobtn">
+                <a href="#locatBoxvid">
+                    <div id="videobtnTextA">日式烘焙</div>
+                    <div id="videobtnTextB">萃取出獨特的好味道</div>
+                </a>
+            </div>
+            <div id="historybtn">
+                <a href="#locatBoxhis">
+                    <div id="historybtnTextA">品牌故事</div>
+                    <div id="historybtnTextB">這是爸爸的咖啡</div>
+                </a>
+            </div>
+            <div id="creatorbtn">
+                <a href="#locatBoxcre">
+                    <div id="creatorbtnTextA">創始人</div>
+                    <div id="creatorbtnTextB">找尋記憶中的好咖啡</div>
+                </a>
+            </div>
         </div>
-        <div id="slider" class="col-10">
+        <div id="slider" class="col-12">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -62,115 +94,249 @@
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
                 <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
             </div>
         </div>
-        <div id="content" class="row col-10">
-            <div id="creator" class="col-12">
-                <div id="creatortitle" class="col-12">
-                    <h1>找尋記憶中的好咖啡</h1>
-                </div>
-                <div id="creatortextA" class="col-7">紀平發紀老闆在13歲時，把身上僅有的三顆雞蛋賣掉，換取旅費離開家鄉來到了台中，佇立於火車站前，紀老闆神情慌張，看著人海茫茫工作毫無著落，便到處詢問路上的店家，是否有缺人手，但因年紀尚小，沒有店家願意雇用，幸運地遇上三民路上修理腳踏車店的老闆，腳踏車店老闆白天販賣炸油條，紀老闆跟著凌晨三點起來炸油條下午修理腳踏車來賺錢，經過一段時日，紀老闆身上存了點錢便決定北上打拼，到台北自行批發布料販售，因此只要在有人潮的地方就可以看到紀老闆的身影，當完兵回到家鄉，經二伯的介紹進入食品公司經銷販賣進口食品。
-                </div>
-                <div id="creatorpicA" class="col-5"></div>
-
-                <div id="creatorpicB" class="col-5"></div>
-                <div id="creatortextB" class="col-7">
-                    24歲結婚成家，創立食品公司”一心牌”， 當時主打商品是百香果汁，為了推廣客源，紀老闆都會親自去店家拜訪客戶，因為有接觸進出口貿易，一個機緣下接觸到咖啡，才在民國62年創立上益咖啡自己的品牌，申請專利，為了控管咖啡豆品質，紀老闆便親自到咖啡產地巴西去挑選生豆，在民國60年左右，因咖啡獨特的口感無法被許多人接受，使得咖啡的市場有所受限，但紀老闆還是堅持要做咖啡，並說－咖啡市場要看的是未來而非現在，不久後引進日本烘豆機，日本社長本人來到台灣教導紀老闆生豆烘焙，紀老闆自己不斷研究烘焙咖啡的方法，訂做屬於自己品牌的咖啡杯組。
-                    民國66年開了第一間實體咖啡店面，之後選定在北區富強街105號
-                </div>
-
+        <div id="locatBoxcre" class="col-10">
+            <div id="creatorbtn">
+                <div id="creatorbtnA">創始人</div>
+                <div id="creatorbtnB">找尋記憶中的好咖啡</div>
             </div>
-            <div id="history" class="container">
-                <div id="historytitle" class="col-12">
-                    <h1>45年的堅持</h1>
-                    <h4>就是為了讓您喝到始終如一的好口味!</h4>
-                </div>
-                <div id="historycontentA" class="row">
-                    <div id="historypicA" class="col"></div>
-                    <div id="historytextA" class="col">
-                        <h1>這是爸爸的咖啡</h1>「爸爸從民國62年開啟了這家上益咖啡店的旅程。在這之前憑著對咖啡的熱愛與堅持，自己撩下去做咖啡製造與進出口批發商。因為爸爸堅信只有從生豆挑選、烘培、萃取直到泡咖啡都要面面俱到，才算是一杯好的咖啡…」上益咖啡的主人望著烘焙機，緩緩述說著這家咖啡店的故事。
-                    </div>
-                </div>
-                <div id="historycontentB" class="row">
-                    <div id="historytextB" class="col">
-                        <h1>世代傳承，紀大哥特調咖啡</h1>世代傳承，紀大哥特調咖啡 紀爸爸從咖啡製造與進出口貿易中取經一直到開設咖啡店，十幾年的淺沉為的就是要讓顧客品嘗到品質最好、最美味的咖啡，如今這棒子交到了第二代紀大哥手中，從小跟著爸爸學習的紀大哥，繼承了爸爸對咖啡的熱愛與技術，現在，做出一杯好咖啡的任務就交由他來呈現給來往的顧客。
-                    </div>
-
-                    <div id="historypicB" class="col"></div>
-                </div>
-                <div id="historycontentC" class="row">
-                    <div id="historypicC" class="col"></div>
-                    <div id="historytextC" class="col">
-                        <h1>從四道程序喝出好咖啡</h1>一杯好咖啡的誕生，必須經過生豆挑選→咖啡豆烘焙→萃取→沖煮四道程序，只要當中一個環節品質出錯，就會影響到最後咖啡的味道。擁有咖啡製造與進出口批發經驗的紀爸爸親自挑選來自各國的咖啡生豆，使用購自日本的富士牌烘焙機來控制咖啡豆的品質，最後才會進入沖煮的程序。
-                    </div>
-                </div>
-                <div id="historycontentD" class="row">
-                    <div id="historytextD" class="col">
-                        <h1>高品質的一遍烘焙</h1>上益咖啡的烘焙過程採取一遍烘焙法，原豆進口後必須等待長時間放置，使其乾燥條件提升到乾燥態下才能進行烘焙，為的是能使其在最佳狀態下烘焙出品質最好的咖啡豆，這樣會損失衣成本，但足以表達對品質的堅持、給與愛好者的回饋。數十年來仍保持一貫的作風。也因為對品質的龜毛，讓上益咖啡經營到現在仍然是其他同業都難以模仿的對象。
-                    </div>
-
-                    <div id="historypicD" class="col"></div>
+        </div>
+        <div id="creator">
+            <div id="creatorTitle" class="col-10">找尋記憶中的好味道</div>
+            <div id="creatorCont" class="col-10">
+                <p style="text-indent:50px">上益咖啡創始人，紀平發，13歲時選擇離開熟悉的家鄉梧棲。在那個中港路尚未開拓的年代，紀先生把身上僅有的三顆雞蛋賣掉，換成零錢，費盡苦心搭車，到了台中火車站。人海茫茫，工作不知從何找起，慌張的紀先生，沿街挨家挨戶的詢問小店家，是否有缺學徒，但因年紀太小，沒有一家店家願意雇用，在最後快要放棄的時候，就在那一剎那，看到了一間腳踏車店，老闆生意太好忙不過來，紀先生就主動幫忙修理，老闆看到紀先生有修理腳踏車的能力，就決定雇用他，而全新的旅程也就此展開。</p>
+                <p style="text-indent:50px">紀先生凌晨三點就得起來幫忙炸油條，到了中午換成修理腳踏車，做了一段時間，紀先生覺得這份工作沒甚麼前途，就存了些錢，決定跟老闆辭職，找新工作的過程中，有撿回收物品賣錢，溫飽三餐，等有了些積蓄，就決定到經濟較發達的台北去學賣布，學習到如何賣布後，就自行批布來賣，到有人潮的地方去賣布，做點小生意，果然自己批布來賣，錢賺得比較快，紀先生漸漸的對做生意有了極大的興趣，於是就把生意上賺到的錢，拿回家鄉孝盡父母。</p>
+                <p style="text-indent:50px">就在親戚聚會中，遇到二伯，二伯得知紀先生想在台中工作，就介紹他到幸利行食品公司，做食品業務，工作一段時間，遇到了好的對象，就決定結婚，成家立業。</p>
+                <p style="text-indent:50px">24歲的紀先生，因之前有做生意的經驗，決定白手起家，從熟悉的食品行開始做起，於是就創立自己的食品公司〝一心牌〞，進口爆米花、餅乾，還有食品原料，紀老闆騎著腳踏車送貨去自由路遠東百貨、融心、財神百貨、大大百貨，還有第一、第二市場的雜貨店，也有供應餐廳食品原料，全國飯店、欣欣餐廳…等，只要是有在做生意的店家，紀老闆都會親自去拜訪客戶，與店家有良好的生意關係，生意才會長久。</p>
+                <p style="text-indent:50px">因為有接觸進出口貿易，一個機緣下接觸到咖啡，品嚐過後，咖啡那特殊的風味，一直存留在紀老闆的腦海裡，於是在民國62年創立上益咖啡的品牌，申請專利，還到咖啡產地巴西去嚴選生豆。而當初很少人在喝咖啡，只有具身分地位的人才喝得到，紀老闆還是堅持要做咖啡，還說咖啡是要看未來。要喝到好喝的咖啡前，要先有一台好的烘豆機，紀老闆還去日本當地選購烘豆機，自行引進日本烘豆機，日本社長親自跟紀老闆指導烘焙，而後紀老闆也不斷研究烘焙咖啡，精進自己的品牌咖啡。</p>
+            </div>
+        </div>
+        <div id="CrossA" class="col-12"></div>
+        <div id="locatBoxhis" class="col-10">
+            <div id="historybtn">
+                <div id="historybtnA">品牌故事</div>
+                <div id="historybtnB">這是爸爸的咖啡</div>
+            </div>
+        </div>
+        <div id="history" class="col-10">
+            <div id="historyTitleA" class="col-12">這是爸爸的咖啡</div>
+            <div id="historyCont" class="row col-12">
+                <div id="historyContPicA" class="col-6"></div>
+                <div id="historyContTextA" class="col-6">
+                    <p style="text-indent:50px">「爸爸從民國62年開啟了這家上益咖啡店的旅程。在這之前憑著對咖啡的熱愛與堅持，自己撩下去做咖啡製造與進出口批發商。因為爸爸堅信只有從生豆挑選、烘培、萃取直到泡咖啡都要面面俱到，才算是一杯好的咖啡…」
+                    </p>
                 </div>
             </div>
-            <div class="timeline-wrap">
-                <ul class="timeline timeline--first">
-                    <li class="era">
-                        <h2 class="era__title">First Era</h2>
-                    </li>
-                    <li class="era">
-                        <div id="eracontentA">
-                            <div id="erapicA"></div>
-                            <div id="eratextA">民國60年做食品業務，經銷森永奶粉，可口美番茄醬，麥片，即溶咖啡粉，送貨到各大百貨公司，超市，第一第二市場雜貨店
-                            </div>
-                            <div id="entry" class="entry">
-                            </div>
+            <div id="historyTitleB" class="col-12">世代傳承，第二代特調咖啡</div>
+            <div id="historyCont" class="row col-12">
+                <div id="historyContPicB" class="col-6"></div>
+                <div id="historyContTextB" class="col-6">
+                    <p style="text-indent:50px">紀爸爸從咖啡製造與進出口貿易中取經一直到開設咖啡店，幾十年的經驗，為的就是要讓顧客能品嚐到，60年代獨特的咖啡風味，如今這棒子交接到第二代紀大哥手中，繼續延續下去，而從小就跟著爸爸學習的紀大哥，繼承 了爸爸嚴謹的態度、熱愛咖啡的心與烘焙技術，想要喝到紀爸爸咖啡風味，現在就交由第二代紀大哥來呈現給每一位顧客。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="Event" class="col-10">
+            <div id="Eventtitle">
+                歷史沿革
+                <div id="Eventslider">
+                    <div class="w3-content w3-display-container" style="max-width:400px">
+                        <img class="mySlides w3-animate-fading" src="img/bean01.jpg" style="width:100%">
+                        <img class="mySlides w3-animate-fading" src="img/bean02.jpg" style="width:100%">
+                        <img class="mySlides w3-animate-fading" src="img/bean03.jpg" style="width:100%">
+                        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                            <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                            <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
                         </div>
-                    </li>
-                    <li class="era">
-                        <div id="eracontentB">
-                            <div id="eratextB">民國61年－從力代食品行 做到自己的品牌一心牌食品 因有接觸到即溶咖啡
-                            </div>
-                            <div id="erapicB"></div>
-                            <div id="entry" class="entry"></div>
-                        </div>
-                    </li>
-                </ul>
-                
+                    </div>
+                </div>
             </div>
-            <div id="video" class="col-12">
-                <center>
+        </div>
+        <div id="CrossB" class="col-12"></div>
+        <div id="locatBoxvid" class="col-10">
+            <div id="videobtn">
+                <div id="videobtnA">日式烘焙</div>
+                <div id="videobtnB">萃取出獨特的好味道</div>
+            </div>
+        </div>
+        <div id="video" class="col-10">
+            <div id="videoTitleA" class="col-12">從四道程序沖出好咖啡</div>
+            <div id="videoCont" class="col-12">
+                <div align="center">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/EQtdgIg1yNU" frameborder="0" allowfullscreen></iframe>
-                </center>
-            </div>
-            <div id="contact" class="col-12">
-                <h1>聯絡資訊</h1>
-                <div id="contactText" class="col-6">
-                    <h3>上益實業有限公司</h3>
-                    <p>(04) 2233 0333</p>
-                    <p>營業時間：10:00 - 22:00</p>
-                    <p>台中市北區富強街105號</p>
-                    <p> www.facebook.com/CoffeeSanyi</p>
                 </div>
-                <div id="contactMap" class="col-6">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1820.1938396499972!2d120.695489!3d24.158133!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d58c6035af3%3A0x41cc9891877a058f!2zNDA05Y-w54Gj5Y-w5Lit5biC5YyX5Y2A5a-M5by36KGXMTA16Jmf!5e0!3m2!1szh-TW!2stw!4v1505793499871" width="400" height="300" frameborder="0" style="border:0" allowfullscreen>
-                    </iframe>
+                <div id="videoTitleB" class="col-12">高品質的烘焙</div>
+                <div id="videoCont" class="row col-12">
+                    <div id="videoContPicB" class="col-6"></div>
+                    <div id="videoContTextB" class="col-6">
+                        <p style="text-indent:50px">上益咖啡的烘焙過程採取一遍烘焙法，原豆進口後必須等待長時間放置，使其乾燥條件提升到乾燥態下才能進行烘焙，為的是能使其在最佳狀態下烘焙出品質最好的咖啡豆，這樣會損失衣成本，但足以表達對品質的堅持、給與愛好者的回饋。數十年來仍保持一貫的作風。也因為對品質的龜毛，讓上益咖啡經營到現在仍然是其他同業都難以模仿的對象。
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
+        <div id="CrossC" class="col-12"></div>
+        <div id="locatBoxmes" class="col-10">
+            <div id="messagebtn">
+                <div id="messagebtnA">聯絡我們</div>
+                <div id="messagebtnB">邀請您來品嘗喝咖啡</div>
+            </div>
+        </div>
+        <div id="message" class="col-10">
+            <div id="messageTitle" class="col-12"></div>
+            <div id="messageCont" class="row col-12">
+                <div id="messageContText" class="col-6">
+                    <p>上益實業有限公司</p>
+                    <p>04-22330333</p>
+                    <p>台中市北區富強街105號</p>
+                    <p>營業時段：10:00 - 22:00</p>
+                    <p>www.facebook.com/CoffeeSanyi</p>
+                </div>
+                <div id="messageContMap" class="col-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1820.1938396499972!2d120.695489!3d24.158133!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d58c6035af3%3A0x41cc9891877a058f!2zNDA05Y-w54Gj5Y-w5Lit5biC5YyX5Y2A5a-M5by36KGXMTA16Jmf!5e0!3m2!1szh-TW!2stw!4v1505793499871"
+                        width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="col-12"></div>
+        <div id="clear"></div>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
         crossorigin="anonymous"></script>
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script>
+        $("document").ready(function () {
+
+            //Slide out nav bar
+            $("#click-toggle-circle").click(function () {
+                //Slide menu out on click
+                $("#slide-out").toggle("slide", 2000);
+
+                //Close arrow on click
+                $("#click-toggle-circle").fadeOut(50);
+                $("#click-toggle-arrow").fadeOut(50);
+
+                //Show other arrow on click
+                setTimeout(function () {
+                    $("#slide-down-arrow").fadeIn(50);
+                    $("#slide-down-circle").fadeIn(50);
+                }, 50);
+
+                /* Delay fade in nav items */
+                setTimeout(function () {
+                    $("#slide-out a").fadeIn(50);
+                }, 50);
+
+                return false;
+            });
+
+
+            //Slide out nav bar
+            $("#slide-out").click(function () {
+                $("#slide-down").toggle("slide", { direction: "up" }, 200);
+                return false;
+            });
+
+
+            //Slide nav bar back in
+            $("#slide-down-circle").click(function () {
+                //Hide button on click
+                $("#slide-down-circle").fadeOut(300);
+                $("#slide-down-arrow").fadeOut(300);
+
+                /* Fade out nav items */
+                $("#slide-out a").fadeOut(0);
+
+
+                //Slide nav menu back in
+                $("#slide-out").toggle("slide", { direction: "left" });
+
+                //Reveal nav button again
+                $("#click-toggle-arrow").fadeIn(300);
+                $("#click-toggle-circle").fadeIn(300);
+                return false;
+
+            });
+        });
+    </script>
+
+    <script>
+        $(window).scroll(function () {
+            var windows_height = $(window).height();
+            var windows_scroll = $(window).scrollTop();
+
+            if (windows_scroll > windows_height / 2) { //如果捲軸高度 > 目前螢幕高度
+                $("#sidebar").removeClass('d-none');
+
+
+            } else { //如果捲軸高度 < 目前螢幕高度
+                $("#sidebar").addClass('d-none');
+            }
+        });
+    </script>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-white", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " w3-white";
+        }
+    </script>
+
+    <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) { myIndex = 1 }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 5000);
+            }
+    </script>
 
 </body>
 
