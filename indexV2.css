@@ -1,10 +1,12 @@
+@import url(//fonts.googleapis.com/earlyaccess/cwtexhei.css);
+
 body {
     padding: 0;
     margin: 0;
+    background-image: url('img/bg.png');
 }
 #all {
     height: auto;
-    background-image: url('img/bg.png');
 }
 
 #nav {
@@ -77,6 +79,7 @@ body {
 #creatorbtnTextA,#historybtnTextA,#videobtnTextA,#messagebtnTextA {
     font-size: 15px;
     color:#E9D365;
+    font-family: 'cwTeXHei', sans-serif;
 }
 #creatorbtnTextB,#historybtnTextB,#videobtnTextB,#messagebtnTextB {
     font-size: 13px;
@@ -87,6 +90,7 @@ body {
     font-size: 15px;
     color:#382019;
     font-weight: bold;
+    font-family: 'cwTeXHei', sans-serif;
 }
 
 #creatorbtnB,#historybtnB,#videobtnB,#messagebtnB {
@@ -180,70 +184,153 @@ background-size: cover;
 }
 
 #creator {
-    height: 1000px;
+    height: auto;
 }
 #creatorTitle {
     margin-left: auto;
     margin-right: auto;
     font-size: 36px;
     font-weight: bold;
-
+    font-family: 'cwTeXHei', sans-serif;
+    margin-bottom: 14px;
 }
 
 #creatorCont{
     margin-left: auto;
     margin-right: auto;
+    line-height: 30px;
+    font-size: 20px;
+    letter-spacing:5px;
 }
 
+#CrossA {
+    background-position: center;
+    height: 150px;
+    width: 100%;
+    background-image: url(img/ad1.jpg);
+    background-size: cover;
+}
 
 #history{
-    height: 500px;
-}
-
-#historyTitle {
+    height: auto;
     margin-left: auto;
     margin-right: auto;
 }
-
-#historyCont{
-    margin-left: auto;
-    margin-right: auto;
+#historyCont,#videoCont {
+    margin-bottom: 20px;
 }
 
+#historyTitleA,#historyTitleB,#videoTitleA,#videoTitleB {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'cwTeXHei', sans-serif;
+    margin-bottom: 14px;
+    padding: 0;
+}
+
+#historyContTextA,#historyContTextB {
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 30px;
+    font-size: 20px;
+    letter-spacing:5px;
+    padding-top: 100px;
+}
+#historyContPicA {
+    height: 400px;
+    width: 200px;
+    background-image: url(img/historypicA.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+}
+
+#historyContPicB {
+    height: 400px;
+    width: 200px;
+    background-image: url(img/historypicB.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+}
+
+
+#CrossB {
+    background-position: center;
+    height: 150px;
+    width: 100%;
+    background-image: url(img/ad2.jpg);
+    background-size: cover;
+}
 
 #video{
     margin-left: auto;
     margin-right: auto;
-    height: 500px;
+    height: auto;
 }
 
-#videoTitle {
+#videoContTextB {
     margin-left: auto;
     margin-right: auto;
+    line-height: 30px;
+    font-size: 20px;
+    letter-spacing:5px;
+}
+#videoContPicB {
+    height: 400px;
+    width: 200px;
+    background-image: url(img/historypicC.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
 }
 
-#videoCont{
-    margin-left: auto;
-    margin-right: auto;
+#CrossC {
+    background-position: center;
+    height: 150px;
+    width: 100%;
+    background-image: url(img/ad3.jpg);
+    background-size: cover;
 }
 
-
-#message{
-    height: 500px;
+#message {
+    height: auto;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 40px;
 }
 
 #messageTitle {
+    height: 500px;
+    background-image: url(img/message_pic1.jpg);
+    background-size: cover;
     margin-left: auto;
     margin-right: auto;
-    font-size: 36px;
+    margin-bottom: 40px;
+    
 }
 
-#messageCont{
+#messageContText {
     margin-left: auto;
     margin-right: auto;
+    line-height: 30px;
+    font-size: 25px;
+    letter-spacing:5px;
+    font-family: 'cwTeXHei', sans-serif;
 }
 
+#footer {
+    height: 100px;
+    background-color: #382019;
+}
+
+#clear {
+    clear:both;
+}
 
 
