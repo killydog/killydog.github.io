@@ -529,8 +529,19 @@ background-position: center;
         position: absolute;
         left: 40%;
     }
-    
-    #nav #messagebtn{display: none}
+    #messagebtn {
+        display: none;
+    }
+    #videobtn {
+        display: none;
+    }
+    #historybtn {
+        display: none;
+    }
+    #creatorbtn {
+        display: none;
+    }
+    nav #messagebtn{display: none}
     #nav #videobtn{display: none}
     #nav #historybtn{display: none}
     #nav #creatorbtn{display: none}
