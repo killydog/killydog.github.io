@@ -507,10 +507,18 @@ background-position: center;
 }
 
 #footer {
-    height: 100px;
+    height: 150px;
     background-color: #382019;
 }
 
+#qrcode {
+    width: 148px;
+    height: 148px;
+    background-image: url('img/qrcode.png');
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
 #clear {
     clear:both;
 }
@@ -559,6 +567,5 @@ background-position: center;
 @media screen and (min-width:768px){
     
     
-
 }
 
