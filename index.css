@@ -507,7 +507,7 @@ background-position: center;
 }
 
 #footer {
-    height: 150px;
+    height: auto;
     background-color: #382019;
 }
 
