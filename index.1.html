@@ -16,9 +16,8 @@
 
 <body>
 
-    <div id="all">
+    <div id="menufix" class="d-none">
         <a href="#menu" id="toggle"><span></span></a>
-
         <div id="menu">
             <ul>
                 <li><a href="#nav">首頁</a></li>
@@ -28,28 +27,10 @@
                 <li><a href="#locatBoxmes">聯絡我們</a></li>
             </ul>
         </div>
-        <div id="sidebar" class="d-none">
-            <div id="slide-out">
-                <a href="#nav">首頁</a>
-                <a href="#locatBoxcre">創始人</a>
-                <a href="#locatBoxhis">品牌故事</a>
-                <a href="#locatBoxvid">日式烘焙</a>
-                <a href="#locatBoxmes">聯絡我們</a>
-            </div>
+    </div>
 
-            <!-- Slide down button -->
-            <div id="slide-down-circle">
-                <div id="slide-down-arrow">
-                </div>
-            </div>
-
-            <!-- Button to pull out nav -->
-            <div id="click-toggle-circle">
-                <div id="click-toggle-arrow">
-                </div>
-            </div>
-        </div>
-        <div id="nav" class="col-12">
+    <div id="all">
+            <div id="nav" class="col-12">
             <div id="logo"></div>
             <div id="messagebtn">
                 <a href="#locatBoxmes">
@@ -296,73 +277,17 @@
        return false;
     }
     </script>
-    <script>
-        $("document").ready(function () {
-
-            //Slide out nav bar
-            $("#click-toggle-circle").click(function () {
-                //Slide menu out on click
-                $("#slide-out").toggle("slide", 2000);
-
-                //Close arrow on click
-                $("#click-toggle-circle").fadeOut(50);
-                $("#click-toggle-arrow").fadeOut(50);
-
-                //Show other arrow on click
-                setTimeout(function () {
-                    $("#slide-down-arrow").fadeIn(50);
-                    $("#slide-down-circle").fadeIn(50);
-                }, 50);
-
-                /* Delay fade in nav items */
-                setTimeout(function () {
-                    $("#slide-out a").fadeIn(50);
-                }, 50);
-
-                return false;
-            });
-
-
-            //Slide out nav bar
-            $("#slide-out").click(function () {
-                $("#slide-down").toggle("slide", { direction: "up" }, 200);
-                return false;
-            });
-
-
-            //Slide nav bar back in
-            $("#slide-down-circle").click(function () {
-                //Hide button on click
-                $("#slide-down-circle").fadeOut(300);
-                $("#slide-down-arrow").fadeOut(300);
-
-                /* Fade out nav items */
-                $("#slide-out a").fadeOut(0);
-
-
-                //Slide nav menu back in
-                $("#slide-out").toggle("slide", { direction: "left" });
-
-                //Reveal nav button again
-                $("#click-toggle-arrow").fadeIn(300);
-                $("#click-toggle-circle").fadeIn(300);
-                return false;
-
-            });
-        });
-    </script>
-
-    <script>
+        <script>
         $(window).scroll(function () {
             var windows_height = $(window).height();
             var windows_scroll = $(window).scrollTop();
 
             if (windows_scroll > windows_height / 2) { //如果捲軸高度 > 目前螢幕高度
-                $("#sidebar").removeClass('d-none');
+                $("#menufix").removeClass('d-none');
 
 
             } else { //如果捲軸高度 < 目前螢幕高度
-                $("#sidebar").addClass('d-none');
+                $("#menufix").addClass('d-none');
             }
         });
     </script>
